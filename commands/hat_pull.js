@@ -232,7 +232,7 @@ module.exports = {
                 hatPullHost = await Users.findOne({
                     "hat_pull.location": `${cmd.guild.id}/${cmd.channel.id}/${cmd.message.id}`
                 });
-
+				//
                 if (!hatPullHost.hat_pull.entered.includes(cmd.user.id)) {
                     hatPullHost.hat_pull.entered.push(cmd.user.id);
                 } else {
